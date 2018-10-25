@@ -23,22 +23,13 @@ public class Exercise_24_2 {
 
     }
     public static int[] mergeArrays(int[] a1, int[] a2) {
-        if ((a1.length == 0) || (a2.length == 0)){
-            return (a1.length == 0) ? a2 : a1;
-        }
-
+//        Your code complexity score is 12.88 (best for this step is 10.05).
         int b1 = 0;
         int b2 = 0;
-        int max_len = a1.length + a2.length;
-        int[] res = new int[max_len];
+        int[] res = new int[a1.length + a2.length];
 
-        for (int i = 0; i< max_len; i++){
-
-            if (b1 == a1.length || b2 == a2.length){
-                res[i] = (b1 == a1.length) ? a2[b2++] : a1[b1++];
-                continue;
-            }
-            res[i] = (a1[b1] < a2[b2])? a1[b1++] : a2[b2++];
+        for (int i = 0; i< a1.length + a2.length; i++){
+            res[i] = (b1 < a1.length) ? ((b2 < a2.length) ? ((a1[b1] < a2[b2])? a1[b1++] : a2[b2++]) : (a1[b1++])) : a2[b2++];
         }
 
         return res; // your implementation here
