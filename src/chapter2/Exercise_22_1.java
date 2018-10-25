@@ -2,7 +2,7 @@ package chapter2;
 
 public class Exercise_22_1 {
     public static void main(String[] args) {
-        char c = "\\";
+        char c = '\\';
         int a = 32;
 //        Your code complexity score is 2.24 (best for this step is 2.24).
         c = (char)('\\' + a);
