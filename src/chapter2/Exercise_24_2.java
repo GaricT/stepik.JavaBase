@@ -19,10 +19,11 @@ public class Exercise_24_2 {
 
 //        int[] a1 = {0, 2, 2};
 //        int[] a2 = {1, 3};
+//        System.out.println((2 ^ 3) > 0);
         System.out.println(Arrays.toString(mergeArrays(a1, a2)));
 
     }
-    public static int[] mergeArrays(int[] a1, int[] a2) {
+    private static int[] mergeArrays(int[] a1, int[] a2) {
 //        Your code complexity score is 12.88 (best for this step is 10.05).
         int b1 = 0;
         int b2 = 0;
