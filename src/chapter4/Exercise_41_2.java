@@ -11,7 +11,7 @@ public class Exercise_41_2 {
         includeMethod();
     }
 
-    private static void includeMethod() {K
+    private static void includeMethod() {
         System.out.println(getCallerClassAndMethodName());
     }
 
