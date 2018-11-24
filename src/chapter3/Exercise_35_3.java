@@ -14,7 +14,6 @@ public class Exercise_35_3 {
     public static Label checkLabels(TextAnalyzer[] analyzers, String text) {
         Label result = Label.OK;
         for (TextAnalyzer mtd: analyzers) {
-            return Arrays.stream(analyzers).anyMatch((s) -> s.processText(text) != Label.OK) ? getLabel() : Label.OK;
             result = mtd.processText(text);
             if (result != Label.OK) {
                 break;
