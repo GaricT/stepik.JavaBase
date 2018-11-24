@@ -24,17 +24,4 @@ public class AsciiCharSequence implements java.lang.CharSequence {
         return new AsciiCharSequence(Arrays.copyOfRange(str, start, end));
     }
 
-    @Override
-    public IntStream chars() {
-        return IntStream.range(0, str.length).map(i -> (char)str[i]);
-    }
-
-    @Override
-    public IntStream codePoints() {
-        return IntStream.range(0, str.length).map(i -> (char)str[i]);
-    }
-
-    public String toString() {
-        return new String(str);
-    }
 }
